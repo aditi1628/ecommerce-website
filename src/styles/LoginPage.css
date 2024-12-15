@@ -1,0 +1,125 @@
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #5a2498;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-container form div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.login-container label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #5a2498;
+    min-width: 120px;
+}
+
+.login-container input {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #5a2498;
+    transition: border-color 0.3s ease;
+}
+
+.login-container input:focus {
+    border-color: #5a2498;
+    outline: none;
+}
+
+.login-container button {
+    padding: 12px;
+    background-color: #5a2498;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+    width: 100%; /* Full width for a centered button */
+    text-align: center;
+}
+
+.login-container button:hover {
+    background-color: #ffffff;
+    color: #5a2498;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column; /* Ensures items are stacked vertically */
+    align-items: center; /* Centers the button and other elements */
+}
+
+.login-container p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #5a2498;
+}
+
+.login-container a {
+    color: #5a2498;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 15px;
+    }
+    .login-container h2 {
+        font-size: 1.5rem;
+    }
+    .login-container input,
+    .login-container button {
+        padding: 18px;
+        font-size: 0.9rem;
+    }
+    .login-container input {
+        margin-bottom: 18px;
+    }
+    .login-container button {
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .login-container {
+        padding: 10px;
+        width: 90%;
+    }
+    .login-container h2 {
+        font-size: 1.25rem;
+    }
+    .login-container input,
+    .login-container button {
+        padding: 8px;
+        font-size: 0.875rem;
+    }
+    .login-container input {
+        margin-bottom: 16px;
+    }
+    .login-container button {
+        margin-top: 16px;
+    }
+}

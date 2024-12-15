@@ -1,0 +1,39 @@
+.search-results-container{
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    text-align: center;
+}
+.search-results-container h2{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #5a2498;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+}
+.search-results{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+}
+.loading,
+.error,
+.no-results{
+    font-size: 1.5rem;
+    color: #555;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .search-results{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 480px){
+    .search-results-container h2{
+        font-size: 1.8rem;
+    }
+}

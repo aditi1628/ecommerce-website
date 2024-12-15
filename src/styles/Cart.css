@@ -1,0 +1,122 @@
+.cart-container{
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+h2 {
+    text-align: center;
+    font-size: 1.5 rem;
+    margin-bottom: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.cart-items{
+    display: flex;
+    flex-direction: column;
+}
+.cart-item{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.cart-item img{
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+.cart-item-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cart-item-details h3{
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+}
+.cart-item-details p{
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+}
+.quantity-control{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.quantity-box{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+}
+.quantity-button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.quantity-button:hover{
+    background-color: #bbb;
+}
+.cart-total{
+    margin-top:20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+.remove-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.remove-button:hover {
+    background-color: #ff1a1a;
+}
+@media (max-width: 768px){
+    .cart-item{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cart-item img{
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 10px;
+    }
+    .quantity-control{
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+    .cart-total{
+        font-size: 1.5rem;
+    }
+}

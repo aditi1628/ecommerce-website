@@ -1,0 +1,96 @@
+.product-card-link{
+    text-decoration: none;
+    color: inherit;
+    }
+
+    .product-card {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        background-color: #fff;
+        cursor: pointer;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .product-card-hover{
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .product-card-img-container{
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /*object-fit: contain */
+        border-bottom: 1px solid #ccc;
+    }
+    .product-card-body{
+        padding: 16px;
+    }
+    .product-card-title{
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+        font-family: Arial,Helvetica,sans-serif;
+        font-weight: bold;
+    }
+    .product-card-text{
+        font-size: 1em;
+        color: #333;
+        margin-bottom: 8px;
+        font-family: Arial,helvetica,sans-serif;
+    }
+    .product-card-button{
+        background-color: #5a2498;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .product-card-button:hover{
+        background-color: #fff;
+        color: #5a2498;
+    }
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+    }
+
+    .col-md-4{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: 768px){
+        .col-md-4{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    @media (min-width: 992px){
+        .col-md-4{
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+        }
+    }

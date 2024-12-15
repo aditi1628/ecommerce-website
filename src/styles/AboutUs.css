@@ -1,0 +1,46 @@
+.about-us-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.about-us-container h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 700;
+}
+.about-us-container p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-bottom: 20px;
+}
+.about-us-container p:first-of-type {
+    margin-top: 0;
+}
+@media (max-width: 768px) {
+    .about-us-container{
+        padding: 15px 20px;
+    }
+    .about-us-container h1{
+        font-size: 2rem;
+    }
+    .about-us-container p{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 480px){
+    .about-us-container{
+        padding: 10px 15px;
+    }
+    .about-us-container h1{
+        font-size: 1.75rem;
+    }
+    .about-us-container p{
+        font-size: 0.9rem;
+    }
+}
